@@ -1,48 +1,67 @@
-For Regression Model: Used Car Price Prediction Project
+**Practice AI/ML Projects**
 
 Project Overview:
-This project aims to predict the selling price of used cars using a machine learning model. The objective is to build a reliable and accurate regression model that can assist both buyers and sellers in estimating a fair market value based on a car's characteristics.
 
-Repository Structure
-The repository is structured as follows:
+This repository contains two distinct machine learning projects:
 
-Practice-AI-ML-Projects-aziro-fresher-: This is the main project folder.
+**Used Car Price Prediction:** A regression project that predicts the selling price of used cars.
 
-used_car_price_prediction.ipynb: The Jupyter Notebook containing all the code for data cleaning, EDA, model training, evaluation, and visualization.
+**Titanic Survival Prediction:** A classification project that predicts the survival of passengers on the Titanic.
 
-used_cars_data.csv: The dataset used for the project.
+**Important Note:**
 
-best_model.pkl: The final trained model, saved as a pickle file for future use.
+This repository has been updated with a new file structure for better organization. The code and data for each project are now located in dedicated, descriptive folders to ensure clarity and maintainability.
 
-Key Project Steps
-Data Preprocessing and Cleaning: Handled missing values, removed outliers, and extracted numerical data from columns with mixed data types.
+**For the Used Car Price Prediction project: Please refer to the used-car-price-prediction/ folder.**
 
-Feature Engineering: Created the car_age feature from the year column to capture the effect of depreciation.
+**For the Titanic Survival Prediction project: Please refer to the titanic-survival-prediction/ folder.**
 
-Exploratory Data Analysis (EDA): Analyzed the distribution of the target variable (selling_price) and the relationship between different features and the price.
+The individual files previously existing at the repository's root are outdated. For the latest code and analysis, please refer to the files within these new directories.
 
-Model Training and Evaluation: Trained and compared several regression models, including Linear Regression, Ridge Regression, SVR, Random Forest, and XGBoost. The models were evaluated using R-squared (R 
-2
- ), Mean Absolute Error (MAE), and Mean Squared Error (MSE).
+**1. Used Car Price Prediction (Regression)**
 
-Model Selection: Selected the best-performing model based on evaluation metrics and saved it for deployment.
+**Project Goal:** To build a model that accurately predicts the selling price of used cars based on their features.
 
-Results and Conclusion
-The Random Forest Regressor proved to be the most effective model, achieving a Test R² score of 0.931. This indicates that the model can explain over 93% of the variance in the used car prices. The model's strong performance can be attributed to its ability to capture complex, non-linear relationships within the data, which simpler linear models could not.
+**Key Steps:**
 
-How to Run the Project
+1. Data Cleaning: Handled missing values and extracted numerical data from columns with mixed data types.
+
+2. Feature Engineering: Created the car_age feature for predicting depreciation.
+
+3. Modeling: Trained and evaluated multiple models, with Random Forest Regressor being the best performer.
+
+4. Results: The final model achieved a Test R² score of 0.931, demonstrating high accuracy.
+
+**2. Titanic Survival Prediction (Classification)**
+
+**Project Goal:** To predict whether a passenger on the Titanic survived or not based on their personal and travel details.
+
+Methodology:
+
+1. Data Cleaning: Addressed missing values and prepared data for modeling.
+
+2. Model Training & Tuning: A variety of classification algorithms were tested, including Logistic Regression, SVC, KNN, Random Forest, Gradient Boosting, XGBoost, and LightGBM.
+
+3. Hyperparameter Tuning: Used GridSearchCV with StratifiedKFold for robust hyperparameter tuning.
+
+4. Results: The best-performing model was XGBoost, which achieved a cross-validation accuracy of 0.8440.
+
+Other strong contenders were Gradient Boosting and Random Forest, indicating that ensemble methods were particularly effective for this dataset.
+
+How to Run the Projects
+
 Clone the repository:
 
 Bash
 
 git clone https://github.com/amogh-aziro-18/Practice-AI-ML-Projects-aziro-fresher-.git
-cd Practice-AI-ML-Projects-aziro-fresher-
-Install the required packages. The core libraries used are pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost, and joblib.
+
+Install the required packages:
 
 Bash
 
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost joblib
-Open the used_car_price_prediction.ipynb notebook in a Jupyter environment (like JupyterLab or Google Colab) and run the cells sequentially to reproduce the entire analysis.
+pip install pandas numpy scikit-learn matplotlib seaborn xgboost lightgbm joblib
+Run the Notebooks: Navigate to the respective project folders and open the notebooks in a Jupyter environment to execute the code and view the analysis.
 
 Author
-(amogh-aziro-18)
+amogh-aziro-18
