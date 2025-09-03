@@ -12,9 +12,9 @@ This repository contains two distinct machine learning projects:
 
 This repository has been updated with a new file structure for better organization. The code and data for each project are now located in dedicated, descriptive folders to ensure clarity and maintainability.
 
-**For the Used Car Price Prediction project: Please refer to the used-car-price-prediction/ folder.**
+**For the Used Car Price Prediction project: Please refer to the Regression/ folder.**
 
-**For the Titanic Survival Prediction project: Please refer to the titanic-survival-prediction/ folder.**
+**For the Titanic Survival Prediction project: Please refer to the Classification/ folder.**
 
 The individual files previously existing at the repository's root are outdated. For the latest code and analysis, please refer to the files within these new directories.
 
